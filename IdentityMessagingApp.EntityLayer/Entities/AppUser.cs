@@ -10,9 +10,9 @@ namespace IdentityMessagingApp.EntityLayer.Entities
     public class AppUser : IdentityUser
     {
         // Gönderdiği mesajlar
-        public ICollection<Messagesda> SentMessages { get; set; }
+        public ICollection<Message> SentMessages { get; set; }
 
         // Aldığı mesajlar
-        public ICollection<Messagesda> ReceivedMessages { get; set; }
+        public ICollection<Message> ReceivedMessages { get; set; }
     }
 }
